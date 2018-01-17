@@ -3,7 +3,7 @@ Mobile web app for recording baby feeding, created for learning Meteor and React
 
 # Installation (Windows)
 * Clone the liquid-sky GIT repository
-* If you don't already have Choclatey installed follow the instructions at https://chocolatey.org/install
+* If you don't already have Meteor installed you will need to install Choclatey first: follow the instructions at https://chocolatey.org/install
 * Install Meteor using `choco install meteor` on an administor command prompt
 * Lastly run `meteor npm install` to install the React and ReactDOM dependencies
 
