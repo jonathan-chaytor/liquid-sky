@@ -6,6 +6,7 @@ import {
 
 import Info from '../pages/Info';
 import Feed from '../pages/Feed';
+import Nappies from '../pages/Nappies';
 
 class Home extends Component{
   render(){
@@ -16,7 +17,7 @@ class Home extends Component{
             <Link to='/'><NavButton key="nav1" thisImage="../src/images/beers.png" thisClass="main-button"/></Link>
           </li>
           <li>
-           <Link to='./Info'>
+           <Link to='./Nappies'>
            <NavButton key="nav2" thisImage="../src/images/charity.png" thisClass="main-button"/>
          </Link>
         </li>

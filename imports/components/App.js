@@ -10,6 +10,8 @@ import Footer from './Footer';
 import Home from './pages/Home';
 import Info from './pages/Info';
 import Feed from './pages/Feed';
+import Nappies from './pages/Nappies';
+
 
 
 class App extends Component{
@@ -21,6 +23,7 @@ class App extends Component{
             <Route exact path="/" component={Home}/>
             <Route exact path="/Info" component={Info}/>
             <Route exact path="/Feed" component={Feed}/>
+            <Route exact path="/Nappies" component={Nappies}/>
           <Footer/>
         </div>
       </Router>
