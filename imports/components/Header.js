@@ -15,7 +15,8 @@ class Header extends Component{
   render(){
     return(
         <header>
-          <nav>
+          <nav key="navLeftTop" className="navbar navbar-light bg-light">
+            <div key="logo" className="navbar-brand mb-0 h1"> My Baby {this.props.babyName}</div>
             <ul>
               <li>
                 <Link to='/'><NavButton key="nav1" thisImage="../src/images/beers.png" thisClass="nav-button"/></Link>

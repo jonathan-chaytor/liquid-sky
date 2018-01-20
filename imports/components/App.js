@@ -17,7 +17,7 @@ class App extends Component{
     return(
       <Router>
         <div className="container-fluid">
-          <Header/>
+          <Header babyName="Buster"/>
             <Route exact path="/" component={Home}/>
             <Route exact path="/Info" component={Info}/>
             <Route exact path="/Feed" component={Feed}/>
