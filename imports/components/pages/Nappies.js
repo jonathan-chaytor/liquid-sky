@@ -10,7 +10,7 @@ class Nappies extends Component{
         <h1>
           Nappies for my baby.
         </h1>
-        <span class="oi oi-account-login"></span>
+        <span className="oi oi-account-login"></span>
       </div>
     )
   }
