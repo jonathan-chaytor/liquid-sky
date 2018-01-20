@@ -1,0 +1,12 @@
+li{
+  list-style: none;
+  display:inline-block;
+  max-width: 120px;
+  max-height: 120px;
+  margin: 20px;
+}
+
+.nav-button{
+  height:100px;
+  width: 100px;
+}
