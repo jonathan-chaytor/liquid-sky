@@ -16,21 +16,29 @@ class Header extends Component{
     return(
         <header>
           <nav key="navLeftTop" className="navbar navbar-light bg-light">
-            <div key="logo" className="navbar-brand mb-0 h1"> My Baby {this.props.babyName}</div>
+            <div key="logo" className="navbar-brand mb-0 h1"> My Baby {this.props.babyName}
             <ul>
               <li>
                 <Link to='/'><NavButton key="nav1" thisImage="../src/images/beers.png" thisClass="nav-button"/></Link>
               </li>
               <li>
                <Link to='./Info'>
-               <NavButton key="nav2" thisImage="../src/images/charity.png" thisClass="nav-button"/>
+               <NavButton key="nav2" thisImage="../src/images/charity.png" thisClass="nav-button"/> <span> Logged in as {this.props.user}</span>
              </Link>
            </li>
+         </ul>
+           </div>
+           <ul>
            <li>
              <Link to='./Feed'>
              <NavButton key="nav3" thisImage="../src/images/smile.png" thisClass="nav-button"/>
            </Link>
          </li>
+         <li>
+           <Link to='./Feed'>
+           <NavButton key="nav3" thisImage="../src/images/smile.png" thisClass="nav-button"/>
+         </Link>
+       </li>
             </ul>
           </nav>
         </header>
