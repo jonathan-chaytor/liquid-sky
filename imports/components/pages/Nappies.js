@@ -8,9 +8,8 @@ class Nappies extends Component{
     return(
       <div id="home" className="container-fluid">
         <h1>
-          Nappies for my baby.
+        <Link to='/'><span class="oi oi-chevron-left"></span></Link> Nappies for my baby.
         </h1>
-        <span className="oi oi-account-login"></span>
       </div>
     )
   }

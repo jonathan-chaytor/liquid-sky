@@ -12,14 +12,12 @@ import Info from './pages/Info';
 import Feed from './pages/Feed';
 import Nappies from './pages/Nappies';
 
-
-
 class App extends Component{
   render(){
     return(
       <Router>
         <div className="container-fluid">
-          <Header babyName="Buster" user="Mum"/>
+          <Header babyName={babyName} user="Mum"/>
             <Route exact path="/" component={Home}/>
             <Route exact path="/Info" component={Info}/>
             <Route exact path="/Feed" component={Feed}/>
@@ -30,5 +28,7 @@ class App extends Component{
     )
   }
 }
+
+export let babyName = "Buster";
 
 export default App;
