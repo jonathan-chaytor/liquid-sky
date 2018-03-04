@@ -14,10 +14,12 @@ import Nappies from './pages/Nappies';
 
 class App extends Component{
   render(){
+    let userName = this.props.user[0];
+    console.log(userName);
     return(
       <Router>
         <div className="container-fluid">
-          <Header babyName={babyName} user="Mum"/>
+          <Header babyName={babyName} user="mum"/>
             <Route exact path="/" component={Home}/>
             <Route exact path="/Info" component={Info}/>
             <Route exact path="/Feed" component={Feed}/>
@@ -25,7 +27,7 @@ class App extends Component{
           <Footer/>
         </div>
       </Router>
-    )
+    ) 
   }
 }
 
