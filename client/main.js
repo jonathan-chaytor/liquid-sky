@@ -6,11 +6,16 @@ import {Users} from './../imports/api/MongoDB.js';
 
 import {Meteor} from 'meteor/meteor';
 
+const getUser = function(user) {
+  return <App user={user}/>;
+}
+
 Meteor.startup(()=>{
   Tracker.autorun(()=>{
-    let user = Users.find({'email':'mum@test.com'}).fetch()
+    user = Users.find({userName: 'user1'}).fetch();
+    let jsx = getUser(user);
     ReactDOM.render(
-      <App user={user}/>, document.getElementById('app')
+      jsx, document.getElementById('app')
       );
   })
 });

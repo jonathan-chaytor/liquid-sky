@@ -12,14 +12,13 @@ import Info from './pages/Info';
 import Feed from './pages/Feed';
 import Nappies from './pages/Nappies';
 
+// figured out how to avoid undefined error but the App rendering isn't happening again when the DB syncs
 class App extends Component{
   render(){
-    let userName = this.props.user[0];
-    console.log(userName);
     return(
       <Router>
         <div className="container-fluid">
-          <Header babyName={babyName} user="mum"/>
+          <Header babyName={babyName} user={"Mum"}/>
             <Route exact path="/" component={Home}/>
             <Route exact path="/Info" component={Info}/>
             <Route exact path="/Feed" component={Feed}/>
