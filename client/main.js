@@ -10,6 +10,8 @@ const getUser = function(user) {
   return <App user={user}/>;
 }
 
+//Comment from Kiarash
+
 Meteor.startup(()=>{
   Tracker.autorun(()=>{
     user = Users.find({userName: 'user1'}).fetch();
