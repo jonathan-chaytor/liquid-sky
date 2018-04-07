@@ -1,0 +1,14 @@
+/* SCSS for General styles goes here */
+
+
+
+
+/* SCSS for specific components goes here */
+/* put all partial declerations in the components folder */
+/* add them as _partialName.scss */
+/*
+import them with
+@import './partialName'
+*/
+@import './components/titlebar';
+@import './components/icon';

@@ -1,12 +1,5 @@
-import {Meteor} from 'meteor/meteor';
-import {Users} from './../imports/api/MongoDB.js';
+import { Meteor } from 'meteor/meteor';
 
-Meteor.startup(()=>{
-    Users.remove({});
-    Users.insert({
-        name: 'Mum1',
-        userName: 'user1',
-        email: 'mum@test.com',
-        babies: [{babyName:"baby1"}]
-    });
+Meteor.startup(() => {
+  // code to run on server at startup
 });
