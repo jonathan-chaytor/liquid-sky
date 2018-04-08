@@ -16,7 +16,7 @@ import Nappies from './pages/Nappies';
 class App extends Component{
   render(){
     console.log(this.props);
-    if(typeof this.props.user=='undefined')
+    if(typeof this.props.user==='undefined')
       return(<div>loading</div>)
     else
       return(
