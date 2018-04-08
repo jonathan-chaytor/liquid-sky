@@ -8,7 +8,12 @@ class Feeds extends Component{
     return(
       <div id="home" className="container-fluid">
         <h1>
-          I HAVE BEEN FEEDING!
+        <form>
+          <h2>Feeding</h2>
+          <label>test</label>
+          <input type='text'/>
+
+        </form>
         </h1>
       </div>
     )

@@ -7,7 +7,7 @@ import {Users} from './../imports/api/MongoDB.js';
 import {Meteor} from 'meteor/meteor';
 
 const getUser = function(user) {
-  return <App user={user}/>;
+  return <App user={user[0]}/>;
 }
 
 Meteor.startup(()=>{
