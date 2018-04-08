@@ -7,6 +7,7 @@ import {
 
 import Header from './Header';
 import Footer from './Footer';
+import Registration from './pages/Registration';
 import Home from './pages/Home';
 import Info from './pages/Info';
 import Feed from './pages/Feed';
@@ -23,7 +24,7 @@ class App extends Component{
         <Router>
           <div className="container-fluid">
             <Header babyName={this.props.user.babies[0].babyName} user={this.props.user.name}/>
-              <Route exact path="/" component={Home}/>
+              <Route exact path="/" component={Registration}/>
               <Route exact path="/Info" component={Info}/>
               <Route exact path="/Feed" component={Feed}/>
               <Route exact path="/Nappies" component={Nappies}/>
