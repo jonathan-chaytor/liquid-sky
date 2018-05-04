@@ -13,12 +13,14 @@ import Info from './pages/Info';
 import Feed from './pages/Feed';
 import Nappies from './pages/Nappies';
 
+import Loading from './Loading';
+
 // figured out how to avoid undefined error but the App rendering isn't happening again when the DB syncs
 class App extends Component{
   render(){
     console.log(this.props);
     if(typeof this.props.user==='undefined')
-      return(<div>loading</div>)
+      return(<Loading></Loading>)
     else
       return(
         <Router>
